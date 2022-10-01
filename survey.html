@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="surveystyles.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1>University Survey Form</h1>
+        <p>Thank you for taking your time to help us improve our Organization</p>
+        <form>
+            <fieldset>
+                <label for="name">Name<input id="name" name="name" type="text" placeholder="Enter your Name" required></label>
+                <label for="email">Email<input id="email" name="email" type="email" placeholder="Enter your Email" required></label>
+                <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" placeholder="Age(Optional)" /></label>
+                <label for="role">How are you influenced with University
+                    <select id="role" name="role">
+                        <option value="">(select one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Staff</option>
+                        <option value="3">Alumni</option>
+                        <option value="4">Influenced University Member</option>
+                    </select>
+                </label>
+            <label>Would You Recommend our University to others?</label>
+            <label for="Defintely"><input id="Defintely" name="recom" type="Radio" class="inline">Defintely</label>
+            <label for="maybe"><input id="maybe" name="recom" type="Radio" class="inline">Maybe</label>
+            <label for="no"><input id="no" name="recom" type="Radio" class="inline" >No</label>
+            <label for="feature">What is your favourite feature of our University
+                <select id="feature" name="feature">
+                    <option value="">Select an option</option>
+                    <option vakue="1">Staff</option>
+                    <option value="2">Events</option>
+                    <option value="3">Clubs</option>
+                    <option value="4">Campus</option>
+                    <option value="5">Security</option>
+                </select>
+            </label>
+            <label>What Would you like to see improved?</label>
+            <label><input id="Infrastructure" type="checkbox" name="Infrastructure" class="inline" />Infrastructure
+            </label>
+            <label><input id="Staff" type="checkbox"  name="Staff" class="inline" />Staff
+            </label>
+            <label><input id="Clubs" type="checkbox"  name="Clubs" class="inline" />Clubs
+            </label>
+            <label><input id="placement" type="checkbox"  name="placement" class="inline" />Placements
+            </label>
+            <label for="typebox">Any Comments or Suggestions?
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+            </label>
+            <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </body>
+</html>
